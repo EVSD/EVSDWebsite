@@ -19,7 +19,8 @@
            <img class="prof" src="http://www.healthsciences.vcu.edu/media/ovphs/ipe/images/profiles/placeholder-man.png">
            <h3 class=""><span>
             {{currentUser.profile.firstName}}
-          </span><span>{{currentUser.profile.lastName}}</span></h3>
+          </span>
+          <span>{{currentUser.profile.lastName}}</span></h3>
            <h5>Personal email:</h5>
            <div class="chip" style="margin-bottom:10px;background-color:#2980b9;color:white;">
              {{#with currentUser}}
@@ -30,7 +31,6 @@
            <div class="chip" style="margin-bottom:10px;background-color:#2980b9;color:white;">
              {{#with currentUser}}
               {{> editableText collection="users" field="profile.DOB" placeholder="Update"}}
-
             {{/with}}
            </div>
            <h5>Student Grade:</h5>
