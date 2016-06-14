@@ -5,7 +5,7 @@ Template.signup.events({
 
     var error = false;
 
-    //// Grab the student's details.
+    // Grab the student's details.
     var student = {
       firstName: $('[name="firstName"]').val(),
       middleName: $('[name="middleName"]').val(),

@@ -7,13 +7,6 @@ var Future = Npm.require('fibers/future');
 
 Meteor.methods({
   createCustomer: function(student, parent, misc, token){
-    // Check our customer object against our expected pattern.
-  //  check(customer, {
-  //    name: String,
-  //    emailAddress: String,
-  //    password: String,
-  //    token: String
-  //  });
     check(student, {
       firstName: String,
       middleName: String,
@@ -56,7 +49,7 @@ Meteor.methods({
     var emailRegex     = new RegExp(student.emailAddress, "i");
     var lookupCustomer = Meteor.users.findOne({"emails.address": emailRegex});
 
-    if ( !lookupCustomer ) {
+    if (!lookupCustomer) {
       // Create a Future that we can use to confirm successful account creation.
       var newCustomer = new Future();
 
@@ -66,12 +59,10 @@ Meteor.methods({
           console.log(err.message);
         } else {
           var customerId = stripeCustomer.id;
-
           // Charge Donation for our new customer.
           Meteor.call('stripeChargeDonation', customerId,  function(err,charge){
-
             if (err) {
-              console.log("signupserver.js: stripeChargeDonation:",err.type);
+              console.log("signupserver.js: stripeChargeDonation:", err.type);
             } else {
               // Once Stripe is all setup, create our user in the application, adding all
               // of the Stripe data we just received. Note: the third parameter being passed
@@ -79,17 +70,7 @@ Meteor.methods({
               // a try/catch statement because Accounts.createUser does NOT accept a callback
               // on the server. This was if we run into an error, we can still grab it and
               // return it to the client.
-            //  console.log("new Accounts.createuser before");
               try {
-            /*    var user = Accounts.createUser({
-                  email: customer.emailAddress,
-                  password: customer.password,
-                  profile: {
-                    name: customer.name,
-                    stripeId: customerId,
-                    Donation: "paid"
-                  }
-                }); */
                 var username = student.emailAddress;
                 var email = student.emailAddress;
                 var password = student.password;

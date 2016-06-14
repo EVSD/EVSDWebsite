@@ -6,8 +6,9 @@ Template.login.events({
         var email = $('[name=email]').val();
         var password = $('[name=password]').val();
         Meteor.loginWithPassword(email, password, function(error){
-        if(error){
+        if(error) {
             console.log(error.reason);
+            window.alert("Wrong login information. Please try again.");
         } else {
             Router.go("home");
         }
