@@ -137,7 +137,7 @@ Template.signup.events({
                // that we created our user using the emailAddress and password values
                // above, we can simply login with these Hot dog, indeed.
                Router.go('/success');
-               console.log("login with password");
+               //console.log("login with password");
               /* Meteor.loginWithPassword(customer.emailAddress, customer.password, function(error){
                  if (error) {
                    alert(error.reason);
