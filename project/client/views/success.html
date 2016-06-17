@@ -1,6 +1,24 @@
 <template name="success">
-  <form id="signup-success" class="success">
-    <h4 class="page-header">Sign-up Success!  Welcome to EVHS Speech & Debate! </h4>
-    <h8 class="page-header">(Please check for your contribution of $250 in your credit card statement)</h8>
-  </form>
+  <link rel="stylesheet" href="success.css">
+    <nav>
+        <div class="nav-wrapper teal">
+          <span class="flow-text">&nbsp;&nbsp;&nbsp;EVSD</span>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                  <li>
+                    <a class="btn" href="{{pathFor route='home'}}">Home</a>
+                  </li>
+                  <li>
+                    <a class="btn" href="{{pathFor route='login'}}">Log In</a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="signup-success" class="success">
+      <h4 class="page-header">Sign-up Success!  Welcome to EVHS Speech & Debate! </h4>
+      <h8 class="page-header">(Please check for your contribution of $250 in your credit card statement)</h8>
+      <br><br>
+    </form>
 </template>
