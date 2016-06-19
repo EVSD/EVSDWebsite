@@ -1,25 +1,44 @@
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>EVSD</title>
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="client/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/plugins/animate.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/plugins/background.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/plugins/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/plugins/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="client/stylesheets/vitality-dist/css/vitality-aqua.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
     <link rel="icon" href="https://raw.githubusercontent.com/EVSD/EVSDWebsite/master/evsdlogo.png">
+    <!-- Core Scripts -->
+    <script src="client/vitality-dist.js/jquery.js"></script>
+    <script src="client/vitality-dist.js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin Scripts -->
+    <script src="client/vitality-dist.js/plugins/jquery.easing.min.js"></script>
+    <script src="client/vitality-dist.js/plugins/classie.js"></script>
+    <script src="client/vitality-dist.js/plugins/cbpAnimatedHeader.js"></script>
+    <script src="client/vitality-dist.js/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="client/vitality-dist.js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="client/vitality-dist.js/plugins/background/core.js"></script>
+    <script src="client/vitality-dist.js/plugins/background/transition.js"></script>
+    <script src="client/vitality-dist.js/plugins/background/background.js"></script>
+    <script src="client/vitality-dist.js/plugins/jquery.mixitup.js"></script>
+    <script src="client/vitality-dist.js/plugins/wow/wow.min.js"></script>
+    <script src="client/vitality-dist.js/contact_me.js"></script>
+    <script src="client/vitality-dist.js/plugins/jqBootstrapValidation.js"></script>
+    <script src="client/js/scrollreveal.min.js"></script>
+    <!-- Vitality Theme Scripts -->
+    <script src="client/vitality-dist.js/vitality.js"></script>
 
 </head>
-<!-- Alternate Body Classes: .modern and .vintage -->
 
 <template name = "home">
     <!-- Navigation -->
-    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-
         <nav>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="nav-wrapper teal">
@@ -46,14 +65,8 @@
                        <a class="page-scroll btn" href="{{pathFor route='login'}}">Log In</a>
                     </li>
                     {{/if}}
-              <!--    {{#if currentUser}}
-                    <li>
-                      {{user.profile.name}}
-                    </li>
-                    {{/if}}-->
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </nav>
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
@@ -66,11 +79,7 @@
               <div class="row center">
                 <a href="{{pathFor route='login'}}" id="download-button" class="btn-large waves-effect waves-light teal">Log In</a>
               </div>
-
-              <br><br>
-
               <center style="color:white">Hey look hidden text</center>
-
             </div>
           </div>
 
@@ -333,27 +342,10 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
             </div>
         </div>
     </div>-->
-    <!-- Core Scripts -->
-    <script src="client/vitality-dist.js/jquery.js"></script>
-    <script src="client/vitality-dist.js/bootstrap/bootstrap.min.js"></script>
-    <!-- Plugin Scripts -->
-    <script src="client/vitality-dist.js/plugins/jquery.easing.min.js"></script>
-    <script src="client/vitality-dist.js/plugins/classie.js"></script>
-    <script src="client/vitality-dist.js/plugins/cbpAnimatedHeader.js"></script>
-    <script src="client/vitality-dist.js/plugins/owl-carousel/owl.carousel.js"></script>
-    <script src="client/vitality-dist.js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="client/vitality-dist.js/plugins/background/core.js"></script>
-    <script src="client/vitality-dist.js/plugins/background/transition.js"></script>
-    <script src="client/vitality-dist.js/plugins/background/background.js"></script>
-    <script src="client/vitality-dist.js/plugins/jquery.mixitup.js"></script>
-    <script src="client/vitality-dist.js/plugins/wow/wow.min.js"></script>
-    <script src="client/vitality-dist.js/contact_me.js"></script>
-    <script src="client/vitality-dist.js/plugins/jqBootstrapValidation.js"></script>
-    <!-- Vitality Theme Scripts -->
-    <script src="client/vitality-dist.js/vitality.js"></script>
+
 </template>
 <template name = "waiver">
-<embed src = "waiver.pdf" height= "2100px" width="800px">
+<embed src = "https://drive.google.com/file/d/0B0GF5CUxnsQPRE5Yb2NZZGV3Zmc/view" height= "2100px" width="800px">
 </template>
 <template name = "whyjoin">
   <section id="about">
