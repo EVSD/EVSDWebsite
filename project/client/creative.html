@@ -1,25 +1,17 @@
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>EVSD</title>
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
     <link rel="icon" href="https://raw.githubusercontent.com/EVSD/EVSDWebsite/master/evsdlogo.png">
 
 </head>
-<!-- Alternate Body Classes: .modern and .vintage -->
 
 <template name = "home">
     <!-- Navigation -->
-    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-
         <nav>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="nav-wrapper teal">
@@ -46,14 +38,8 @@
                        <a class="page-scroll btn" href="{{pathFor route='login'}}">Log In</a>
                     </li>
                     {{/if}}
-              <!--    {{#if currentUser}}
-                    <li>
-                      {{user.profile.name}}
-                    </li>
-                    {{/if}}-->
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </nav>
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
@@ -66,11 +52,7 @@
               <div class="row center">
                 <a href="{{pathFor route='login'}}" id="download-button" class="btn-large waves-effect waves-light teal">Log In</a>
               </div>
-
-              <br><br>
-
               <center style="color:white">Hey look hidden text</center>
-
             </div>
           </div>
 
@@ -155,12 +137,12 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
             </div>
         </div>
     </section>
-  <footer class="footer" style="background-image: url('/img/bg-footer.jpg')">
+  <footer class="footer" style="background-image: url('https://raw.githubusercontent.com/EVSD/EVSDWebsite/master/project/public/img/bg-footer.jpg')">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4 contact-details">
                     <p>evhs.sd@gmail.com
-                    <h4><i class="fa fa-envelope"></i> Email</h4>
+                    <h4><i class="fa fa-envelope"></i>Email</h4>
                     </p>
                 </div>
             </div>
@@ -174,186 +156,11 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals -->
-    <!-- Example Modal 1 -->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/creative/portfolio/bg-1.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Example Modal 2 -->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/creative/portfolio/bg-2.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Example Modal 3 -->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/creative/portfolio/bg-3.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Example Modal 4 -->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/creative/portfolio/bg-4.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Core Scripts -->
-    <script src="client/vitality-dist.js/jquery.js"></script>
-    <script src="client/vitality-dist.js/bootstrap/bootstrap.min.js"></script>
-    <!-- Plugin Scripts -->
-    <script src="client/vitality-dist.js/plugins/jquery.easing.min.js"></script>
-    <script src="client/vitality-dist.js/plugins/classie.js"></script>
-    <script src="client/vitality-dist.js/plugins/cbpAnimatedHeader.js"></script>
-    <script src="client/vitality-dist.js/plugins/owl-carousel/owl.carousel.js"></script>
-    <script src="client/vitality-dist.js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="client/vitality-dist.js/plugins/background/core.js"></script>
-    <script src="client/vitality-dist.js/plugins/background/transition.js"></script>
-    <script src="client/vitality-dist.js/plugins/background/background.js"></script>
-    <script src="client/vitality-dist.js/plugins/jquery.mixitup.js"></script>
-    <script src="client/vitality-dist.js/plugins/wow/wow.min.js"></script>
-    <script src="client/vitality-dist.js/contact_me.js"></script>
-    <script src="client/vitality-dist.js/plugins/jqBootstrapValidation.js"></script>
-    <!-- Vitality Theme Scripts -->
-    <script src="client/vitality-dist.js/vitality.js"></script>
+
 </template>
 <template name = "waiver">
-<embed src = "waiver.pdf" height= "2100px" width="800px">
+  test
+  <embed src = "https://drive.google.com/file/d/0B0GF5CUxnsQPRE5Yb2NZZGV3Zmc/view" height= "2100px" width="800px">
 </template>
 <template name = "whyjoin">
   <section id="about">
@@ -394,6 +201,7 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
        </div>
    </section>
 </template>
+
 <template name = "memberprofile">
 {{#if currentUser.profile.member}}
 	 <section id="about">
@@ -426,9 +234,11 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
     </section>
 {{/if}}
 </template>
+
 <!--<template name = "signup">
   <button>Pay with Stripe</button>
 </template>-->
+
 <template name = "error">
   Error Completing Signup.
 </template>
