@@ -10,8 +10,9 @@ Template.login.events({
             console.log(error.reason);
             document.getElementById("42").innerHTML="Incorrect Credentials";
         } else {
-            Router.go("home");
+            Router.go("profile");
         }
-        });
+      });
+
     }
 });

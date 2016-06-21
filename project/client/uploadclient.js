@@ -7,7 +7,7 @@ Template.memberprofile.events({
 	'change #file-upload' : function (event, template) {
 		var file = event.target.files[0];
 		var name = event.target.files[0].name;
-		
+
 		var reader = new FileReader();
 		reader.onload = function (file) {
 			var result = reader.result;
@@ -25,9 +25,5 @@ Template.memberprofile.helpers ({
 		return Meteor.users.find({_id: currentUserId});
 	}
 })
-	
+
 }
-
-
-
-
