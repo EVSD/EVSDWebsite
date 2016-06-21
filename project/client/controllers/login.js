@@ -8,7 +8,7 @@ Template.login.events({
         Meteor.loginWithPassword(email, password, function(error){
         if(error){
             console.log(error.reason);
-            document.getElementById("42").innerHTML="Incorrect Credentials";
+            Materialize.toast("Incorrect Credentials", 3000);
         } else {
             Router.go("profile");
         }
