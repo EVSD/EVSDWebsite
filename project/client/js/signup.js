@@ -5,7 +5,7 @@ Template.signup.events({
 
     var error = false;
 
-    (function ($) {
+(function ($) {
   $(document).ready(function() {
     // Function to update labels of text fields
     Materialize.updateTextFields = function() {
@@ -19,6 +19,8 @@ Template.signup.events({
         }
       });
     };
+  }
+}
 
     //// Grab the student's details.
     var student = {
