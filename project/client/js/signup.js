@@ -33,7 +33,7 @@ Template.signup.events({
       studentId: $('[name="studentId"]').val(),
       facebookAccount: $('[name="facebookAccount"]').val(),
       facebookEvsd: $('[name="facebookEvsd"]').val(),
-      schoolloopEvsd: $('[name="schoolloopEvsd"]').val()
+      schoolloopEvsd: $('[name="schoolloopEvsd"]').val(),
     };
     var parent = {
         firstParent: $('[name="firstParent"]').val(),

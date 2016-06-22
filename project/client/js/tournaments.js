@@ -17,17 +17,7 @@ if (Meteor.isClient) {
             });
           }
           return availableTournaments;
-          /*
-          var available = [];
-          var name = "";
-          for (var i=0; i < Meteor.Tournaments.length; i++) {
-            name = Meteor.Tournaments[i].tournamentname;
-            available.push({
-              availableTournament: name
-            });
-          }
-          return available
-          */
+
         },
 
 
@@ -43,20 +33,6 @@ if (Meteor.isClient) {
           }
           return availablePartners;
         }
-          /*
-          var allowed;
-          var name = "";
-          for(var i=0; Meteor.Users.length; i++){
-            name = Meteor.Users[i].profile.firstName;
-            allowed.push({
-                possiblePartner: name
-            });
-          }
-          return allowed;
-        }
-        */
-    });
-
 
     Template.tournamentregistration.events({
         'submit form': function(){
