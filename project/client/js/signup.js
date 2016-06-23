@@ -1,10 +1,9 @@
 Template.signup.events({
-  'submit form': function(e){
+  'click #submitBtn': function(e){
     // Prevent form from submitting.
     e.preventDefault();
 
     var error = false;
-
     //// Grab the student's details.
     var student = {
       firstName: $('[name="firstName"]').val(),
