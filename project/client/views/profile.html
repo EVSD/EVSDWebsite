@@ -26,6 +26,9 @@
                     <a class="btn" href="{{pathFor route='home'}}"> Home</a>
                   </li>
                   <li>
+                    <a class="btn" href="{{pathFor route='tournamentregistration'}}"> Tournament Registration</a>
+                  </li>
+                  <li>
                     <a class="btn" href="{{pathFor route='logout'}}"> Logout</a>
                   </li>
             </ul>
@@ -34,7 +37,6 @@
     </nav>
     <br><br>
     <div class="main center">
-          <a href="{{pathFor route='home'}}" class=""><i class="material-icons" style="font-size:50px; color:#e74c3c;">cancel</i></a> <br><br>
            <img class="prof" src="http://www.healthsciences.vcu.edu/media/ovphs/ipe/images/profiles/placeholder-man.png">
            <h3 class=""><span>
             {{currentUser.profile.firstName}}
