@@ -1,5 +1,5 @@
 Template.signup.events({
-  'click #submitBtn': function(e){
+  'submit form': function(e){
     // Prevent form from submitting.
     e.preventDefault();
 
