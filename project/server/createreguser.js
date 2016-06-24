@@ -1,10 +1,6 @@
 Meteor.methods ({
   createreguser : function (student, parent, misc) {
 
-    //check(name, String);
-    //check(emailAddress, String)
-    //check (password, String);
-
     check(student, {
       firstName: String,
       middleName: String,
