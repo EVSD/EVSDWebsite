@@ -48,6 +48,9 @@ Template.signup.events({
         address_zip = $('[data-stripe="address_zip"]').val(),
         address_country = $('[data-stripe="address_country"]').val();
 
+      // if the user did not enter credit card information, call createreguser to create the user.
+      // admins will remind the user to pay the contribution later
+
       if ((ccNum == null || ccNum == "") && (cvcNum == null || cvcNum == "") && (expMonth == null || expMonth == "") && (expYear == null || expYear == "") && (name == null || name == "") && (address_line1 == null || address_line1 == "")
           && (address_line2 == null || address_line2 == "") && (address_city == null || address_city == "") && (address_state == null || address_state == "") && (address_zip == null || address_zip == "") && (address_country == null || address_country == "")) {
 
@@ -65,24 +68,28 @@ Template.signup.events({
             }
 
         });
-      }
+        // otherwise, if the user did enter credit card information:
+      } else {
     // Validate the number
 
     if (!Stripe.card.validateCardNumber(ccNum)) {
         error = true;
-        INPUTERROR.report('The credit card number appears to be invalid.');
+        //INPUTERROR.report('The credit card number appears to be invalid.');
+        window.alert('The credit card number appears to be invalid. Please verify that the credit card number entered is correct.');
     }
 
     // Validate the CVC:
     if (!Stripe.card.validateCVC(cvcNum)) {
         error = true;
-        INPUTERROR.report('The CVC number appears to be invalid.');
+        //INPUTERROR.report('The CVC number appears to be invalid.');
+        window.alert('The CVC number appears to be invalid. Please verify that the CVC number entered is correct.');
     }
 
     // Validate the expiration:
     if (!Stripe.card.validateExpiry(expMonth, expYear)) {
         error = true;
-        INPUTERROR.report('The expiration date appears to be invalid.');
+        window.alert('The expiration date appears to be invalid. Please verify that the expiration date entered is correct.');
+        //INPUTERROR.report('The expiration date appears to be invalid.');
     }
        // Take our card data and create a Stripe token from the client. This
        // ensures that our code is PCI compliant to keep the man from knocking
@@ -107,8 +114,6 @@ Template.signup.events({
            token: $('[name="stripeToken"]').val()
          };
 
-        //var submitButton = $('input[type="submit"]').button('loading');
-        console.log("test");
          Meteor.call('createCustomer', student, parent, misc, token, function(err, response){
 
            if (err) {
@@ -154,6 +159,6 @@ Template.signup.events({
 
        });
      } // end STRIPE.getToken();
-
+}
   }
 });
