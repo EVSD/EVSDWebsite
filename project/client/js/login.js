@@ -1,7 +1,7 @@
 Meteor.subscribe("users");
 
 Template.login.events({
-    'click .btn': function(event){
+    'click #login-btn': function(event){
         event.preventDefault();
         var email = $('[name=email]').val();
         var password = $('[name=password]').val();
