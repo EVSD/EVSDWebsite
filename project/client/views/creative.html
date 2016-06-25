@@ -13,7 +13,6 @@
 <template name = "home">
     <!-- Navigation -->
         <nav>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="nav-wrapper teal">
               <span class="flow-text">&nbsp;&nbsp;&nbsp;EVSD</span>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -21,25 +20,22 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     {{#if currentUser}}
+                      <li><a> {{currentUser.username}}</a>  </li>
+                      <li><a class="btn" href="{{pathFor route='profile'}}">Profile</a></li>
+                      <li><a class="btn" href="{{pathFor route='tournamentregistration'}}">Tournament Registration</a></li>
                       <li>
-                        <a> {{currentUser.username}}</a>
-                      </li>
-                      <li>
-                        <a class="btn" href="{{pathFor route='profile'}}"> Profile</a>
-                      </li>
-                      <li>
-                        <a class="btn" href="{{pathFor route='logout'}}"> Logout</a>
-                      </li>
-                      <li>
-                        <a class="btn" href="{{pathFor route='tournamentregistration'}}"> Tournament Registration</a>
-                      </li>
+                      <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                      </ul>
+                    </li>
+                      <li><a class="btn" href="{{pathFor route='logout'}}">Logout</a></li>
                     {{else}}
-                    <li>
-                       <a class="page-scroll btn" href="{{pathFor route='signup'}}">Sign Up</a>
-                    </li>
-                    <li>
-                       <a class="page-scroll btn" href="{{pathFor route='login'}}">Log In</a>
-                    </li>
+                    <li><a class="page-scroll btn" href="{{pathFor route='signup'}}">Sign Up</a></li>
+                    <li><a class="page-scroll btn" href="{{pathFor route='login'}}">Log In</a></li>
                     {{/if}}
                 </ul>
             </div>
