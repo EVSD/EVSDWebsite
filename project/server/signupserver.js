@@ -8,12 +8,6 @@ var Future = Npm.require('fibers/future');
 Meteor.methods({
   createCustomer: function(student, parent, misc, token){
     // Check our customer object against our expected pattern.
-  //  check(customer, {
-  //    name: String,
-  //    emailAddress: String,
-  //    password: String,
-  //    token: String
-  //  });
     check(student, {
       firstName: String,
       middleName: String,
