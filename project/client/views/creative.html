@@ -13,7 +13,7 @@
 <template name = "home">
     <!-- Navigation -->
         <nav>
-            <div class="nav-wrapper teal">
+            <div class="nav-wrapper teal z-depth-2">
               <span class="flow-text">&nbsp;&nbsp;&nbsp;EVSD</span>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li class="hidden">
@@ -23,15 +23,6 @@
                       <li><a> {{currentUser.username}}</a>  </li>
                       <li><a class="btn" href="{{pathFor route='profile'}}">Profile</a></li>
                       <li><a class="btn" href="{{pathFor route='tournamentregistration'}}">Tournament Registration</a></li>
-                      <li>
-                      <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-                      <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">one</a></li>
-                        <li><a href="#!">two</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">three</a></li>
-                      </ul>
-                    </li>
                       <li><a class="btn" href="{{pathFor route='logout'}}">Logout</a></li>
                     {{else}}
                     <li><a class="page-scroll btn" href="{{pathFor route='signup'}}">Sign Up</a></li>
@@ -136,7 +127,7 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
             </div>
         </div>
     </section>
-  <footer class="footer" style="background-image: url('https://raw.githubusercontent.com/EVSD/EVSDWebsite/master/project/public/img/bg-footer.jpg')">
+  <!-- <footer class="footer" style="background-image: url('https://raw.githubusercontent.com/EVSD/EVSDWebsite/master/project/public/img/bg-footer.jpg')">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4 contact-details">
@@ -154,6 +145,33 @@ Welcome to Evergreen Valley High School Speech & Debate, one of the most success
             <div class="row copyright">
             </div>
         </div>
+    </footer> -->
+
+    <aside id = "services" class="cta-quote" style="background-image:url('https://raw.githubusercontent.com/EVSD/EVSDWebsite/master/project/public/img/bg-footer.jpg');height:40%;widht:auto;"></aside>
+    <footer class="footer teal" style="padding-top:20;">
+      <div class="container">
+        <div class="row">
+          <div class="col l6">
+            <h5 class="white-text">Footer</h5>
+            <p class="grey-text text-lighten-4">Insert a useful footer comment.</p>
+          </div>
+          <div class="col l6">
+            <h5 class="white-text">Contact</h5>
+            <ul id="icons">
+              <li style="display: inline"><a class="fa fa-facebook fa-2x white-text" href="http://on.fb.me/1EcE7oz" target="_blank"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+              <li style="display: inline"><a class="fa fa-github fa-2x white-text" href="https://github.com/EVSD/EVSDWebsite" target="_blank"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+              <li style="display: inline"><a class="fa fa-envelope fa-2x white-text" href="mailto:evhs.sd@gmail.com" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--css vitality mixes with materialize here so make sure footer background colors are the same for now-->
+      <div class="footer-copyright">
+        <div class="container">
+          <a href="https://github.com/EVSD/EVSDWebsite">&copy; EVSD Webmasters</a>
+          <a class="grey-text text-lighten-2 right" href="https://tldrlegal.com/license/mit-license">MIT License</a>
+        </div>
+      </div>
     </footer>
 
 </template>
