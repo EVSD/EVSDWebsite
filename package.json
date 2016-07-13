@@ -1,0 +1,6 @@
+{
+ "name": "evsd-landing",
+ "scripts": {
+ "start": "meteor --settings settings.json"
+   }
+}
